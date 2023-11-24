@@ -1,0 +1,46 @@
+<form [formGroup]="validateForm"
+  (ngSubmit)="submitForm()"
+  nz-form
+  class="login-form">
+  <nz-form-item class="form-item">
+    <nz-form-control>
+      <nz-input-group>
+        <input type="text"
+          style="border-radius: 6px;"
+          class="form-input"
+          nz-input
+          formControlName="userName"
+          placeholder="Email address or Phone number">
+      </nz-input-group>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item class="form-item">
+    <nz-form-control>
+      <nz-input-group>
+        <input type="password"
+          style="border-radius: 6px;"
+          class="form-input"
+          nz-input
+          formControlName="password"
+          placeholder="Password">
+      </nz-input-group>
+    </nz-form-control>
+  </nz-form-item>
+
+  <button [nzType]="'primary'"
+    type="submit"
+    nz-button
+    class="login-form-button login-form-margin">
+    Log in
+  </button>
+  <a>Forgotten password?</a>
+  <div class="divider-line"></div>
+  <div>
+    <button [nzType]="'link'"
+      type="button"
+      nz-button
+      class="success-btn">
+      Create new account
+    </button>
+  </div>
+</form>

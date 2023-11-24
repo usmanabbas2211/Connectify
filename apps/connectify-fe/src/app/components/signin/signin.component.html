@@ -1,1 +1,28 @@
-<p>signin works!</p>
+<div [nzAlign]="'middle'"
+  [nzGutter]="[16,16]"
+  style="min-height: 100vh;overflow:hidden;background: #F0F2F5;"
+  nz-row>
+  <div [nzMd]="{offset:2,span:10}"
+    [nzLg]="{offset:2,span:10}"
+    nzFlex="{}"
+    nzSm="24"
+    nzXs="24"
+    nz-col
+    class="gutter-row">
+    <div>
+      <h2 style="color: #1C1E21;font-size: 28px;line-height: 30px;font-family: Helvetica, Arial, sans-serif;">
+        Facebook helps you connect and share with the people in your life.
+      </h2>
+    </div>
+  </div>
+  <div [nzMd]="{offset:2,span:6}"
+    [nzLg]="{offset:2,span:6}"
+    nzSm="24"
+    nzXs="24"
+    nz-col
+    class="gutter-row">
+    <div class="inner-box">
+      <signin-form></signin-form>
+    </div>
+  </div>
+</div>
