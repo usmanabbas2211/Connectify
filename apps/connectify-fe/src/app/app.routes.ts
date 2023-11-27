@@ -1,7 +1,7 @@
 import { Route } from '@angular/router';
-import { SigninComponent } from './components/signin/signin.component';
-import { SignupComponent } from './components/signup/signup.component';
-import { FeedComponent } from './components/feed/feed.component';
+import { SigninComponent } from './pages/signin/signin.component';
+import { SignupComponent } from './pages/signup/signup.component';
+import { FeedComponent } from './pages/feed/feed.component';
 
 export const appRoutes: Route[] = [
   {
