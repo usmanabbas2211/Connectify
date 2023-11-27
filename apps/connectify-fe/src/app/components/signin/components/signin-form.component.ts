@@ -11,6 +11,7 @@ import {
   NonNullableFormBuilder,
   Validators,
 } from '@angular/forms';
+import { InputElementComponent } from '../../../elements/input-element.component';
 
 @Component({
   selector: 'signin-form',
@@ -18,11 +19,10 @@ import {
   imports: [
     CommonModule,
     NzGridModule,
-    NzFormModule,
-    NzInputModule,
     NzButtonModule,
     FormsModule,
     ReactiveFormsModule,
+    InputElementComponent,
   ],
   templateUrl: './signin-form.component.html',
   styleUrl: './signin-form.component.less',

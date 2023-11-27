@@ -2,31 +2,15 @@
   (ngSubmit)="submitForm()"
   nz-form
   class="login-form">
-  <nz-form-item class="form-item">
-    <nz-form-control>
-      <nz-input-group>
-        <input type="text"
-          style="border-radius: 6px;"
-          class="form-input"
-          nz-input
-          formControlName="userName"
-          placeholder="Email address or Phone number">
-      </nz-input-group>
-    </nz-form-control>
-  </nz-form-item>
-  <nz-form-item class="form-item">
-    <nz-form-control>
-      <nz-input-group>
-        <input type="password"
-          style="border-radius: 6px;"
-          class="form-input"
-          nz-input
-          formControlName="password"
-          placeholder="Password">
-      </nz-input-group>
-    </nz-form-control>
-  </nz-form-item>
 
+  <div style="width: 100%;">
+    <input-element [control]="validateForm.get('userName')"
+      placeholder="Email address or Phone number"></input-element>
+  </div>
+  <div style="width: 100%;">
+    <input-element [control]="validateForm.get('password')"
+      placeholder="Password"></input-element>
+  </div>
   <button [nzType]="'primary'"
     type="submit"
     nz-button
